@@ -57,7 +57,7 @@
   crossorigin="anonymous"></script>
 
   <script>
-  var = githubUser="falconsw";
+  var githubUser="falconsw";
 $(document).ready(function(){
 $.getJSON("https://api.github.com/users/"+githubUser+"/repos",function(result){
   $.each(result, function(i, field){
