@@ -13,5 +13,9 @@ Just open the js/settings.js file and fill in the required fields
  var instagram ="YOUR_INSTAGRAM_USERNAME";
  var facebook ="YOUR_FACEBOOK_USERNAME";
 ```
+
+
+you must add a screen image named screen.png into all repos
+
 idea and design :
 https://ilaydagurbak.github.io/
