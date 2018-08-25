@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by Falconsw</title>
+  <title></title>
   
   
   
@@ -23,9 +23,9 @@
 </nav>
 
 <div id="welcome-section" class="intro">
-  <img class="img_me" src="https://avatars3.githubusercontent.com/u/6252528?s=400&u=101d1c1711a85ee463a32ea54944ac9aa6ffdb97&v=4" alt="me">
-  <h1>Hey I'm Omer.</h1>
-  <p>a web developer</p>
+  <div id="profile"></div>
+  <h1>Hey I'm <span id="name"></span>.</h1>
+  <p>a <span id="job"></span></p>
 
 
 </div>
@@ -40,37 +40,17 @@
     <h1>Let's work together...</h1>
     <p>Which ideas do you want to make real?</p>
   </div>
-  <a href="https://facebook.com/falconsoftw" target="_blank" class="contact-details">Facebook</a>
-  <a id='profile-link' href="https://github.com/falconsw" target="_blank" class="contact-details">GitHub</a>
-  <a href="https://instagram.com/falconsoftw" target="_blank" class="contact-details">Instagram</a>
-  <a href="mailto:omer_dogan@outlook.com" class="contact-details">Send a mail</a>
+<div id="social"></div>
 </div>
 <footer>**Send email for business inquiries
-  <p>&copy; FalconSw <a href="mailto:omer_dogan@outlook.com" target="_blank">FalconSw</a></p>
+  <p>&copy; <span id="footer"></span></p>
 </footer>
 
 
   
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-  <script>
-  var githubUser="falconsw";
-$(document).ready(function(){
-$.getJSON("https://api.github.com/users/"+githubUser+"/repos",function(result){
-  $.each(result, function(i, field){
-  
-    $("#projects").append('<a href="'+field.html_url+'" target="_blank" class="project project-tile">'+
-	'<img class="project-pic" src="https://raw.githubusercontent.com/'+githubUser+'/'+field.name+'/master/screen.png" alt="project">'+
-	'<div class="project-title">'+field.name+'</div>'+
-	'</a>');
-      });
-    });
-});
-
-  </script>
+  <script src="js/settings.js"></script>
 
 </body>
 
