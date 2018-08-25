@@ -57,12 +57,13 @@
   crossorigin="anonymous"></script>
 
   <script>
+  var = githubUser="falconsw";
 $(document).ready(function(){
-$.getJSON("https://api.github.com/users/falconsw/repos",function(result){
+$.getJSON("https://api.github.com/users/"+githubUser+"/repos",function(result){
   $.each(result, function(i, field){
   
     $("#projects").append('<a href="'+field.html_url+'" target="_blank" class="project project-tile">'+
-	'<img class="project-pic" src="https://raw.githubusercontent.com/falconsw/'+field.name+'/master/screen.png" alt="project">'+
+	'<img class="project-pic" src="https://raw.githubusercontent.com/'+githubUser+'/'+field.name+'/master/screen.png" alt="project">'+
 	'<div class="project-title">'+field.name+'</div>'+
 	'</a>');
       });
