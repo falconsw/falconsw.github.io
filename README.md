@@ -1,5 +1,5 @@
 # falconsw.github.io
 github repo portfolio display
 
-##design @ilaydagurbak
-## https://ilaydagurbak.github.io/
+##idea and design
+https://ilaydagurbak.github.io/
