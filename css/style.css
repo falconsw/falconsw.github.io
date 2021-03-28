@@ -193,7 +193,7 @@ header p {
 
 header p a {
     display: inline-block;
-    padding: 14px 25px 11px 25px;
+    padding: 14px 25px 11px 67px;
     margin: 10px 0;
     font-size: 16px;
     color: #fff;
@@ -202,7 +202,7 @@ header p a {
     position: relative
 }
 
-/*
+
 header p a:before {
     content: "\e611";
     font-family: Helium;
@@ -215,7 +215,7 @@ header p a:before {
     transition: all ease .5s
 }
 
- */
+
 
 header p a:hover:before {
     transform: rotate(360deg);
